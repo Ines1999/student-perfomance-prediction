@@ -20,9 +20,9 @@ The dataset (https://archive.ics.uci.edu/ml/datasets/student+performance) we use
     * Modeling_classification_and_regression.ipynb
 - Web Application files : webapp folder which contains the following : 
     * templates folder : contains the different HTML files for our web application
-    * static : contains the different CSS files for our web application
-    * prediction.py : contains different prediction function for each one of our models 
-    * app.py : contains all of the process of creating our web application (this is the final that is executed when runing our application)
+    * static folder : contains the different CSS files for our web application
+    * prediction.py : contains different prediction functions for each one of our models 
+    * app.py : contains all of the process of creating our web application (this is the file that is executed when runing our application)
     * test.csv : created when different information about a student is entered through the web application form
 - Other useful files :
     * predict.py : a script that takes a data file as an argument ( we created this file to be able to run the requested scenario )
