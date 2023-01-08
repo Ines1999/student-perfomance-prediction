@@ -26,7 +26,7 @@ def predictionSVM():
     df['pass'] = np.where(df['G3'] < 10, 0, 1)
     X = df.drop(["G3", "pass", "lastName", "firstName"], axis=1)
     Y = df['pass']
-    svm = load('../Modeling/Models/svm.pkl')
+    svm = load('../Models/svm.pkl')
     s = svm.predict(X)
     result = accuracy_score(Y, s)
     accuracyPrediction['svm'] = result
@@ -43,7 +43,7 @@ def predictionKNN():
     df['pass'] = np.where(df['G3'] < 10, 0, 1)
     X = df.drop(["G3", "pass", "lastName", "firstName"], axis=1)
     Y = df['pass']
-    knn = load('../Modeling/Models/knn.pkl')
+    knn = load('../Models/knn.pkl')
     s = knn.predict(X)
     result = accuracy_score(Y, s)
     accuracyPrediction['knn'] = result
@@ -56,7 +56,7 @@ def predictionNaiveBayes():
     df['pass'] = np.where(df['G3'] < 10, 0, 1)
     X = df.drop(["G3", "pass", "lastName", "firstName"], axis=1)
     Y = df['pass']
-    nb = load('../Modeling/Models/naive_bayes.pkl')
+    nb = load('..Models/naive_bayes.pkl')
     s = nb.predict(X)
     result = accuracy_score(Y, s)
     accuracyPrediction['naiveBayes'] = result
@@ -69,7 +69,7 @@ def predictionRandomForest():
     df['pass'] = np.where(df['G3'] < 10, 0, 1)
     X = df.drop(["G3", "pass", "lastName", "firstName"], axis=1)
     Y = df['pass']
-    forest = load('../Modeling/Models/random_forest.pkl')
+    forest = load('../Models/random_forest.pkl')
     s = forest.predict(X)
     result = accuracy_score(Y, s)
     accuracyPrediction['randomForest'] = result
@@ -82,7 +82,7 @@ def predictionGradientBoosting():
     df['pass'] = np.where(df['G3'] < 10, 0, 1)
     X = df.drop(["G3", "pass", "lastName", "firstName"], axis=1)
     Y = df['pass']
-    gradient = load('../Modeling/Models/gradient_boosting.pkl')
+    gradient = load('../Models/gradient_boosting.pkl')
     s = gradient.predict(X)
     result = accuracy_score(Y, s)
     accuracyPrediction['gradientBoosting'] = result
@@ -108,7 +108,7 @@ def predictionLogisticRegression():
     df['pass'] = np.where(df['G3'] < 10, 0, 1)
     X = df.drop(["G3", "pass", "lastName", "firstName"], axis=1)
     Y = df['pass']
-    logistic_regression = load('../Modeling/Models/logistic_reg.pkl')
+    logistic_regression = load('../Models/logistic_reg.pkl')
     s = logistic_regression.predict(X)
     result = accuracy_score(Y, s)
     accuracyPrediction['logisticRegression'] = result
