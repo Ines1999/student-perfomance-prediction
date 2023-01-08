@@ -56,7 +56,7 @@ def predictionNaiveBayes():
     df['pass'] = np.where(df['G3'] < 10, 0, 1)
     X = df.drop(["G3", "pass", "lastName", "firstName"], axis=1)
     Y = df['pass']
-    nb = load('..Models/naive_bayes.pkl')
+    nb = load('../Models/naive_bayes.pkl')
     s = nb.predict(X)
     result = accuracy_score(Y, s)
     accuracyPrediction['naiveBayes'] = result
@@ -95,7 +95,7 @@ def predictionDecisionTree():
     df['pass'] = np.where(df['G3'] < 10, 0, 1)
     X = df.drop(["G3", "pass", "lastName", "firstName"], axis=1)
     Y = df['pass']
-    decision = load('../Modeling/Models/decision_tree.pkl')
+    decision = load('../Models/decision_tree.pkl')
     s = decision.predict(X)
     result = accuracy_score(Y, s)
     accuracyPrediction['decisionTree'] = result
