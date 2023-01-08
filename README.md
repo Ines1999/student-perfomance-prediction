@@ -4,7 +4,7 @@ By providing data attributes including student grades and demographic, social, a
 
 ### Introduction
 
-The dataset (https://archive.ics.uci.edu/ml/datasets/student+performance) we used in this project is from the UCI Machine Learning Repository. This data approach approaches student achievement in secondary education at two Portuguese schools. The data attributes include student grades, demographic, social, and school-related features, and they were collected using school reports and questionnaires. Two datasets are provided regarding the performance in two distinct subjects: mathematics (mat) and Portuguese (por). 
+The dataset (https://archive.ics.uci.edu/ml/datasets/student+performance) we used in this project is from the UCI Machine Learning Repository. This data approaches student achievement in secondary education at two Portuguese schools. The data attributes include student grades, demographic, social, and school-related features, and they were collected using school reports and questionnaires. Two datasets are provided regarding the performance in two distinct subjects: mathematics (mat) and Portuguese (por). 
 
 ### Folders & Files 
 
